@@ -50,7 +50,7 @@
     Fraction *result = [[Fraction alloc] init];
     
     result.numertor = numertor * f.denominator + denominator * f.numertor;
-    result.denominator = denominator + f.denominator;
+    result.denominator = denominator * f.denominator;
     
     [result reduce];
     return result;
@@ -63,7 +63,7 @@
     Fraction *result = [[Fraction alloc] init];
     
     result.numertor = numertor * f.denominator - denominator * f.numertor;
-    result.denominator = denominator + f.denominator;
+    result.denominator = denominator * f.denominator;
     
     [result reduce];
     return result;
