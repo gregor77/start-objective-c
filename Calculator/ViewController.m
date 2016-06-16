@@ -20,6 +20,8 @@
     BOOL firstOperand, isNumerator;
     Calculator *myCalculator;
     NSMutableString *displayString;
+    
+    int opCount;
 }
 
 @synthesize display;
@@ -32,6 +34,8 @@
     isNumerator = YES;
     displayString = [NSMutableString stringWithCapacity: 40];
     myCalculator = [[Calculator alloc] init];
+    
+    self.myButton.enabled = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,6 +60,8 @@
 
 - (void) processOp:(char)theOp
 {
+    opCount++;
+    
     NSString *opStr;
     
     op = theOp;
@@ -81,6 +87,9 @@
     
     [displayString appendString: opStr];
     display.text = displayString;
+    
+    if (opCount > 1)
+        self.myButton.enabled = false;
 }
 
 - (void) storeFracPart
@@ -136,6 +145,9 @@
     
     [displayString setString: @""];
     display.text = displayString;
+    
+    opCount = 0;
+    self.myButton.enabled = YES;
 }
 
 - (IBAction)clickEqual:(id)sender {
@@ -151,6 +163,8 @@
         isNumerator = YES;
         firstOperand = YES;
         [displayString setString: @""];
+        
+        opCount = 0;
     }
 }
 

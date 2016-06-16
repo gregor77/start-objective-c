@@ -12,6 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *display;
 
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
+
 - (IBAction)clickDigit:(UIButton *)sender;
 
 - (void)processDigit:(int)digit;

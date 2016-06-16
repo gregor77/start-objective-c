@@ -182,6 +182,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="display" destination="dA1-3F-Mjx" id="GO9-fK-7cC"/>
+                        <outlet property="myButton" destination="J79-jL-AMj" id="qum-U7-U5i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
