@@ -1,5 +1,5 @@
 //
-//  InfoViewController.h
+//  MtViewController.h
 //  Calculator
 //
 //  Created by Dwayne Park on 2016. 6. 16..
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfoViewController : UIViewController
-
-- (IBAction)close:(id)sender;
-
+@interface MtViewController : UIViewController
+- (IBAction)goHome:(id)sender;
 @end

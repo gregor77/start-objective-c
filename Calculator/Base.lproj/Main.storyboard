@@ -182,6 +182,12 @@
                                     <action selector="openInfoView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwm-S7-3nj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TC-ZB-V8Q">
+                                <rect key="frame" x="15" y="694" width="22" height="22"/>
+                                <connections>
+                                    <action selector="openNewView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZVg-9i-Flr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -192,6 +198,8 @@
                         <outletCollection property="myButtons" destination="fxH-7P-zY0" id="tgJ-HE-tjx"/>
                         <outletCollection property="myButtons" destination="qOB-xz-Jtn" id="j55-vx-LAj"/>
                         <outletCollection property="myButtons" destination="Dsj-M1-64y" id="HZO-iz-cUy"/>
+                        <segue destination="2cK-Cv-nw2" kind="presentation" identifier="mtview" id="hO4-PX-zRN"/>
+                        <segue destination="LRR-48-LtJ" kind="presentation" identifier="versionview" id="Ruh-yX-174"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -222,6 +230,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvC-Co-Jwd">
+                                <rect key="frame" x="148" y="598" width="118" height="41"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="LRR-48-LtJ" eventType="touchUpInside" id="4tG-4C-yei"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -229,7 +248,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gp6-l2-9MV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="349"/>
+            <point key="canvasLocation" x="743" y="3"/>
+        </scene>
+        <!--Mt View Controller-->
+        <scene sceneID="BTj-BB-nee">
+            <objects>
+                <viewController id="2cK-Cv-nw2" customClass="MtViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Sa-wI-rhB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jon-ZL-NgA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k2W-Se-ohX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aU-oM-Fax">
+                                <rect key="frame" x="148" y="284" width="118" height="36"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="집에가자"/>
+                                <connections>
+                                    <action selector="goHome:" destination="2cK-Cv-nw2" eventType="touchUpInside" id="vIW-wb-wtQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="머털이 보고싶다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjZ-qC-w1m">
+                                <rect key="frame" x="113" y="132" width="188" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEN-re-Bqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="815"/>
         </scene>
     </scenes>
 </document>

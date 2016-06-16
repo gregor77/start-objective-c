@@ -16,6 +16,7 @@
 		CAFC54C41D123A7A00D67966 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC54C31D123A7A00D67966 /* Fraction.m */; };
 		CAFC54C71D123EC300D67966 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC54C61D123EC300D67966 /* Calculator.m */; };
 		CAFC54CA1D1285EB00D67966 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC54C91D1285EB00D67966 /* InfoViewController.m */; };
+		CAFC54CD1D129A2C00D67966 /* MtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC54CC1D129A2C00D67966 /* MtViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		CAFC54C61D123EC300D67966 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		CAFC54C81D1285EB00D67966 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		CAFC54C91D1285EB00D67966 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		CAFC54CB1D129A2C00D67966 /* MtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtViewController.h; sourceTree = "<group>"; };
+		CAFC54CC1D129A2C00D67966 /* MtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MtViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				CAFC54C61D123EC300D67966 /* Calculator.m */,
 				CAFC54C81D1285EB00D67966 /* InfoViewController.h */,
 				CAFC54C91D1285EB00D67966 /* InfoViewController.m */,
+				CAFC54CB1D129A2C00D67966 /* MtViewController.h */,
+				CAFC54CC1D129A2C00D67966 /* MtViewController.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				CAFC54CA1D1285EB00D67966 /* InfoViewController.m in Sources */,
 				CAFC54AD1D1230E900D67966 /* main.m in Sources */,
 				CAFC54C41D123A7A00D67966 /* Fraction.m in Sources */,
+				CAFC54CD1D129A2C00D67966 /* MtViewController.m in Sources */,
 				CAFC54C71D123EC300D67966 /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

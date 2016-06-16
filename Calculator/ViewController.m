@@ -171,6 +171,10 @@
     }
 }
 
+- (IBAction)openNewView:(id)sender {
+    [self performSegueWithIdentifier:@"mtview" sender:self];
+}
+
 - (IBAction)openInfoView:(id)sender {
     InfoViewController *infoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"infoview"];
     

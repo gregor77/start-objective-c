@@ -1,18 +1,18 @@
 //
-//  InfoViewController.m
+//  MtViewController.m
 //  Calculator
 //
 //  Created by Dwayne Park on 2016. 6. 16..
 //  Copyright © 2016년 Dwayne Park. All rights reserved.
 //
 
-#import "InfoViewController.h"
+#import "MtViewController.h"
 
-@interface InfoViewController ()
+@interface MtViewController ()
 
 @end
 
-@implementation InfoViewController
+@implementation MtViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,8 +34,8 @@
 }
 */
 
-- (IBAction)close:(id)sender {
+- (IBAction)goHome:(id)sender {
     [self.presentingViewController dismissViewControllerAnimated:YES
-                                                     completion:nil];
+                                                      completion:nil];
 }
 @end

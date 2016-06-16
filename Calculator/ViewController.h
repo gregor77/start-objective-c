@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *myButtons;
 
+- (IBAction)openNewView:(id)sender;
+
 - (IBAction)openInfoView:(id)sender;
 
 - (IBAction)clickDigit:(UIButton *)sender;
