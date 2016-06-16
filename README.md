@@ -14,11 +14,12 @@ ViewController  <->  Main Stroyboard
 화면 전환 방법은 modal과 push가 있는데, 용도에 따라 달라진다.
 Modal은 화면에서 새로운 화면 전환시 사용, Push는 선택시 상세내역 보여줄 때 화면 전환시 사용한다. 애니
 메이션 동작방식은 오른쪽에서 왼쪽으로 등이 있다.
-|Modal|Push|
-|-----|----|
-|1.Segue 화면끼리|.|
-|2.Segue ViewController|.|
-|3.Code|.|
+
+Modal|Push
+-----|----
+1.Segue 화면끼리|.
+2.Segue ViewController|.
+3.Code|.
 
 ## 제약 사항
 * 2개 이상의 입력 연산이 수행되지 않는다.
