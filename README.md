@@ -15,4 +15,6 @@ ViewController  <->  Main Stroyboard
 
 ## 추가 구현
 * operation이 2개 이상 입력 시,  '='버튼을 disable 처리
-  - Hint : 1) '=' 버튼에 Outley 추가 2)button 속성 중 'enabled' NO/YES 사용
+* Hint
+  - 1) '=' 버튼에 Outley 추가
+  - 2)button 속성 중 'enabled' NO/YES 사용
