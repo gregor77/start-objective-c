@@ -24,4 +24,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickPlus:(id)sender {
+}
+
+- (IBAction)clickMultiply:(id)sender {
+}
+
+- (IBAction)clickMinus:(id)sender {
+}
+
+- (IBAction)clickDivide:(id)sender {
+}
+- (IBAction)clickOver:(id)sender {
+}
+
+- (IBAction)clickInit:(id)sender {
+}
+
+- (IBAction)clickEqual:(id)sender {
+}
+- (IBAction)clickDigit:(id)sender {
+}
 @end

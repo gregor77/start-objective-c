@@ -10,6 +10,20 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *display;
+
+- (IBAction)clickDigit:(id)sender;
+
+// 산술연산키
+- (IBAction)clickPlus:(id)sender;
+- (IBAction)clickMultiply:(id)sender;
+- (IBAction)clickMinus:(id)sender;
+- (IBAction)clickDivide:(id)sender;
+
+// 기타키
+- (IBAction)clickOver:(id)sender;
+- (IBAction)clickInit:(id)sender;
+- (IBAction)clickEqual:(id)sender;
 
 @end
 
