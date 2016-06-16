@@ -37,4 +37,7 @@ Modal은 화면에서 새로운 화면 전환시 사용, Push는 선택시 상�
 #### Q3) Label에 결과값이 있을 때, operator 버튼을 클릭하는 경우, label에 결과값 이어서 연산이 되도록한다
 
 ## App
-<img src="https://github.com/gregor77/start-objective-c/blob/master/app_calculator.png" width="307" height="571 align="center">
+* App Storyboard
+<img src="https://github.com/gregor77/start-objective-c/blob/master/calculator_demo_main.png" width="307" align="center">
+* App Main View
+<img src="https://github.com/gregor77/start-objective-c/blob/master/calculator_storyboard.png" width="307" height="571 align="center">
