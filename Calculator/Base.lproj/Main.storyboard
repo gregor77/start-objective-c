@@ -179,7 +179,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJO-T6-1uo">
                                 <rect key="frame" x="377" y="694" width="22" height="22"/>
                                 <connections>
-                                    <segue destination="LRR-48-LtJ" kind="presentation" modalTransitionStyle="flipHorizontal" id="uyw-Gp-c2L"/>
+                                    <action selector="openInfoView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwm-S7-3nj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -188,7 +188,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="display" destination="dA1-3F-Mjx" id="GO9-fK-7cC"/>
-                        <outlet property="myButton" destination="J79-jL-AMj" id="qum-U7-U5i"/>
                         <outletCollection property="myButtons" destination="Ehc-14-cSm" id="VIV-NA-Vb0"/>
                         <outletCollection property="myButtons" destination="fxH-7P-zY0" id="tgJ-HE-tjx"/>
                         <outletCollection property="myButtons" destination="qOB-xz-Jtn" id="j55-vx-LAj"/>
@@ -202,7 +201,7 @@
         <!--Info View Controller-->
         <scene sceneID="WVc-pf-xfH">
             <objects>
-                <viewController id="LRR-48-LtJ" customClass="InfoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="infoview" id="LRR-48-LtJ" customClass="InfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aFN-Q5-jrO"/>
                         <viewControllerLayoutGuide type="bottom" id="okb-7u-OZn"/>

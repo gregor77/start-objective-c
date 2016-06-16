@@ -12,9 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *display;
 
-@property (weak, nonatomic) IBOutlet UIButton *myButton;
-
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *myButtons;
+
+- (IBAction)openInfoView:(id)sender;
 
 - (IBAction)clickDigit:(UIButton *)sender;
 

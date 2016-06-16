@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Calculator.h"
+#import "InfoViewController.h"
 
 @interface ViewController ()
 
@@ -169,5 +170,17 @@
         btn.enabled = val;
     }
 }
+
+- (IBAction)openInfoView:(id)sender {
+    InfoViewController *infoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"infoview"];
+    
+    infoViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+    // 마지막에 completion은 delegate 역학을 대신한다. InfoViewController에서 첫째화면으로 호출할 블록함수
+    [self presentViewController:infoViewController
+                       animated:YES
+                     completion:nil];
+}
+
 
 @end
