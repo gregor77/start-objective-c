@@ -18,6 +18,7 @@ ViewController  <->  Main Stroyboard
 * Hint
   - 1) '=' 버튼에 Outlet 추가
   - 2)button 속성 중 'enabled' NO/YES 사용
+
 #### Q2) 연산자가 입력되면 나머지 연산자 버튼을 disable 처리
 * Hint
   - 1) Outlet을 연산자 모든 버튼에 세팅하여 한번에 4개 버튼이 비활성화 되도록한다.
