@@ -27,4 +27,4 @@ ViewController  <->  Main Stroyboard
 #### Q3) Label에 결과값이 있을 때, operator 버튼을 클릭하는 경우, label에 결과값 이어서 연산이 되도록한다
 
 ## App
-![계산기 App 이미지](https://github.com/gregor77/start-objective-c/blob/master/app_calculator.png = 100x50)
+![계산기 App 이미지](https://github.com/gregor77/start-objective-c/blob/master/app_calculator.png =307x571)
