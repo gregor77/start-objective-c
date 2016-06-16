@@ -38,7 +38,7 @@ Modal은 화면에서 새로운 화면 전환시 사용, Push는 선택시 상�
 
 ## App
 * App Storyboard
-![App Stroyboard](https://github.com/gregor77/start-objective-c/blob/master/calculator_demo_main.png)
+![App Stroyboard](https://github.com/gregor77/start-objective-c/blob/master/calculator_storyboard.png)
 
 * App Main View
-<img src="https://github.com/gregor77/start-objective-c/blob/master/calculator_storyboard.png" width="307" height="571 align="center">
+<img src="https://github.com/gregor77/start-objective-c/blob/master/calculator_demo_main.png" width="307" height="571 align="center">
