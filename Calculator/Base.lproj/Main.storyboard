@@ -183,6 +183,10 @@
                     <connections>
                         <outlet property="display" destination="dA1-3F-Mjx" id="GO9-fK-7cC"/>
                         <outlet property="myButton" destination="J79-jL-AMj" id="qum-U7-U5i"/>
+                        <outletCollection property="myButtons" destination="Ehc-14-cSm" id="VIV-NA-Vb0"/>
+                        <outletCollection property="myButtons" destination="fxH-7P-zY0" id="tgJ-HE-tjx"/>
+                        <outletCollection property="myButtons" destination="qOB-xz-Jtn" id="j55-vx-LAj"/>
+                        <outletCollection property="myButtons" destination="Dsj-M1-64y" id="HZO-iz-cUy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

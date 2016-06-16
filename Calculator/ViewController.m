@@ -20,8 +20,6 @@
     BOOL firstOperand, isNumerator;
     Calculator *myCalculator;
     NSMutableString *displayString;
-    
-    int opCount;
 }
 
 @synthesize display;
@@ -35,7 +33,7 @@
     displayString = [NSMutableString stringWithCapacity: 40];
     myCalculator = [[Calculator alloc] init];
     
-    self.myButton.enabled = YES;
+    [self setButtonEnabled:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,8 +58,6 @@
 
 - (void) processOp:(char)theOp
 {
-    opCount++;
-    
     NSString *opStr;
     
     op = theOp;
@@ -88,8 +84,7 @@
     [displayString appendString: opStr];
     display.text = displayString;
     
-    if (opCount > 1)
-        self.myButton.enabled = false;
+    [self setButtonEnabled:NO];
 }
 
 - (void) storeFracPart
@@ -146,8 +141,7 @@
     [displayString setString: @""];
     display.text = displayString;
     
-    opCount = 0;
-    self.myButton.enabled = YES;
+    [self setButtonEnabled:YES];
 }
 
 - (IBAction)clickEqual:(id)sender {
@@ -164,7 +158,15 @@
         firstOperand = YES;
         [displayString setString: @""];
         
-        opCount = 0;
+        [self setButtonEnabled:YES];
+    }
+}
+
+- (void)setButtonEnabled:(BOOL)val
+{
+    for (int i=0; i<self.myButtons.count; i++) {
+        UIButton *btn = [self.myButtons objectAtIndex:i];
+        btn.enabled = val;
     }
 }
 

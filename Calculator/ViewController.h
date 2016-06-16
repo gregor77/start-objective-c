@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *myButtons;
+
 - (IBAction)clickDigit:(UIButton *)sender;
 
 - (void)processDigit:(int)digit;
@@ -30,6 +32,9 @@
 - (IBAction)clickOver:(id)sender;
 - (IBAction)clickInit:(id)sender;
 - (IBAction)clickEqual:(id)sender;
+
+// disable
+- (void)setButtonEnabled:(BOOL)val;
 
 @end
 
