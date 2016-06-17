@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Calculator.h"
 #import "InfoViewController.h"
+#import "MtViewController.h"
 
 @interface ViewController ()
 
@@ -27,6 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"viewDidLoad");
     
     // Do any additional setup after loading the view, typically from a nib.
     firstOperand = YES;
@@ -172,13 +175,38 @@
 }
 
 - (IBAction)openNewView:(id)sender {
+    NSLog(@"openNewView by segue");
+//    [self performSegueWithIdentifier:@"versionview" sender:self];
     [self performSegueWithIdentifier:@"mtview" sender:self];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    NSLog(@"Segue ID = %@", segue.identifier);
+    
+    if ([segue.identifier isEqualToString: @"versionview"]) {
+        InfoViewController *infoView = [segue destinationViewController];
+        infoView.myString = @"Hello World";
+    } else if ([segue.identifier isEqualToString:@"mtview"]) {
+        MtViewController *mtView = [segue destinationViewController];
+        [mtView changeColorFunc:^(UIColor *newColor) {
+            [self.view setBackgroundColor:newColor];
+        }];
+    }
+}
+
 - (IBAction)openInfoView:(id)sender {
-    InfoViewController *infoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"infoview"];
+    InfoViewController *infoViewController = [self.storyboard
+                                              instantiateViewControllerWithIdentifier:@"infoview"];
+    
+    // ViewCotroller의 인스턴스 주소값을 할당
+    infoViewController.delegate = self;
     
     infoViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+//    infoViewController.myString = @"Hello World";
+    infoViewController.myString = self.display.text;
     
     // 마지막에 completion은 delegate 역학을 대신한다. InfoViewController에서 첫째화면으로 호출할 블록함수
     [self presentViewController:infoViewController
@@ -186,5 +214,15 @@
                      completion:nil];
 }
 
+
+- (IBAction)unwindToViewController:(UIStoryboardSegue *)sender {
+    NSLog(@"unwindToViewController");
+}
+
+- (void) changeColor:(UIColor *)newColor {
+    NSLog(@"Change Color !");
+    
+    [self.view setBackgroundColor: newColor];
+}
 
 @end

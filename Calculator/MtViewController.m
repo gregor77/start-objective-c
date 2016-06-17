@@ -34,6 +34,15 @@
 }
 */
 
+- (IBAction)changeColor:(id)sender {
+    NSLog(@"MtView changeColor..");
+    changeMainBackColor([UIColor blueColor]);
+}
+
+- (void)changeColorFunc:(void (^)(UIColor *))myFunc {
+    changeMainBackColor = myFunc;
+}
+
 - (IBAction)goHome:(id)sender {
     [self.presentingViewController dismissViewControllerAnimated:YES
                                                       completion:nil];

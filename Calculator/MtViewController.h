@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MtViewController : UIViewController
+@interface MtViewController : UIViewController {
+    void(^changeMainBackColor)(UIColor*);
+}
+- (IBAction)changeColor:(id)sender;
+
+- (void)changeColorFunc:(void(^)(UIColor*))myFunc;
+
 - (IBAction)goHome:(id)sender;
 @end

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InfoViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <InfoViewProtocol>
 
 @property (weak, nonatomic) IBOutlet UILabel *display;
 
@@ -37,6 +38,12 @@
 
 // disable
 - (void)setButtonEnabled:(BOOL)val;
+
+// mtView에 goHome을 처리하기 위해서 생성
+- (IBAction)unwindToViewController:(UIStoryboardSegue *)sender;
+
+// delegate처리를 위한 메소드
+- (void)changeColor:(UIColor *)newColor;
 
 @end
 

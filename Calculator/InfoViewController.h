@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol InfoViewProtocol <NSObject>
+- (void)changeColor:(UIColor *)newColor;
+@end
+
 @interface InfoViewController : UIViewController
 
+@property (nonatomic, weak) NSString *myString;
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+
+// main 화면의 color를 변경하기 위한 용도
+@property (nonatomic, strong) id<InfoViewProtocol> delegate;
+
 - (IBAction)close:(id)sender;
+
+- (IBAction)changeColor:(id)sender;
 
 @end
